@@ -1,13 +1,155 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #202020;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.artist {
+  max-width: 240px;
+  margin: 50px 20px;
+  border-radius: 10px;
+  background-color: #181818;
+}
+
+.artist-name {
+  color: black;
+  margin: 5px;
+  padding-left: 0;
+  color: #fff;
+  word-wrap: break-word;
+}
+.artist-details {
+  display: flex;
+}
+.artist-img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  
+}
+.artist-info {
+  margin-left: 30px;
+}
+.logout {
+  display: flex;
+  margin: 10px;
+  justify-content: flex-end;
+  
+}
+.logout > button {
+  background-color: #1ed760;
+  width: 70px;
+  height: 32px;
+  border-radius: 6px;
+  color: #fff;
+}
+.hello {
+  color: white;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search-input {
+  width: 500px;
+  height: 40px;
+  border-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-left: 10px;
+  border-right: none;
+}
+.search-btn {
+  height: 46px;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #1ed760;
+  color: white;
+}
+
+.search-input::placeholder {
+  padding-left: 5px;
+}
+.popu{
+  padding-bottom: 50px;
+}
+.link-container{
+  border-top:solid #202020;
+  display: flex;
+}
+.link{
+  margin-left: 35px;
+}
+.album-info{
+  margin-left: 20px;
+}
+.album-img{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 6px;
+}
+.artist-name-title{
+  color: white;
+  margin: 50px 0 0 50px;
+}
+.album-name-title{
+  color: white;
+  margin-left: 50px;
+}
+.login{
+  position: relative;
+}
+.login-btn{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin-top: 200px ;
+  font-size: 48px;
+  color: #fff;
+}
+@media (min-width: 400px) {
+  .artists {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .search-input {
+    width: 200px;
+  }
+}
+@media (min-width: 576px){
+
+  .artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .search-input {
+    width: 300px;
+  }
+  
+}
+@media (min-width: 650px){
+  .artists{
+    justify-content: space-around;
+  }
 }
